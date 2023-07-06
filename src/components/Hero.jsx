@@ -157,6 +157,9 @@ const Grid = styled.div`
   grid-template-columns: 360px 1px 60px;
   grid-template-rows: 40px;
   grid-column-gap: 60px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Hero = () => {

@@ -85,6 +85,12 @@ const Grid = styled.div`
   grid-template-columns: 228px 1px 1px 1px 1px;
   grid-template-rows: 40px;
   grid-column-gap: 60px;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 162px 1px 1px 1px 1px;
+    grid-column-gap: 30px;
+    
+  }
 `;
 
 const Icon = styled.img`

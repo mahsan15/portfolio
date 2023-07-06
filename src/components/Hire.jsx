@@ -94,11 +94,16 @@ const Works = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
+    padding: 20px;
     width: 350px;
     font-size: 12px;
     height: 140px;
     align-items: center;
     text-align: center;
+    border-radius: 20px;
+    );
+  
+
   }
 `;
 
@@ -124,13 +129,39 @@ const Button = styled.div`
   }
 `;
 
+const But = styled.div`
+  display: none;
+  width: 140px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+  transition: 0.3s;
+  transition: transform 250ms;
+
+  &:hover {
+    background-color: #00008b;
+    transform: translateY(-5px);
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+  display: flex;
+    );
+`;
+
 const List = styled.ul`
   list-style-type: square;
   text-align: left;
 
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const Hire = () => {
@@ -207,6 +238,7 @@ export const Hire = () => {
               </li>
             </List>
           </Works>
+          <But onClick={onButtonClick}>Download Resume</But>
         </Right>
       </Container>
     </Section>

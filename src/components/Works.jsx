@@ -68,10 +68,16 @@ const ListItem = styled.li`
     font-size: 26px;
     color: white;
     -webkit-text-stroke: 0px;
+    
   }
   &:hover {
     color: white;
     transform: translateY(-15px);
+    @media only screen and (max-width: 768px) {
+        color: #d3d3d3;
+        transform: translateY(-2px);
+        
+      }
   }
 `;
 
